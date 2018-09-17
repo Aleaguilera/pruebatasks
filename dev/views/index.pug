@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+      title Introducción a Pug
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1")
+      link(rel='stylesheet', href='css/styles.css')
+    body
+      .wrapper
+        header.header header
+        
+        .main
+          p lorem 
+        aside.aside.aside-1 Aside 1
+        aside.aside.aside-2 Aside 2
+        footer.footer Footer
+        input(type='button', value='Show' id='showPanel')
+        input(type='button', value='Hide' id='hidePanel')
+        #panel
+          aside.aside.aside-1 Aside 1
+          aside.aside.aside-2 Aside 2
+      include _footer
+      script(src='https://yastatic.net/jquery/3.1.1/jquery.min.js')   
+      script(src='javascripts/main.js')
+      

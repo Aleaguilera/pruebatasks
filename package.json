@@ -1,0 +1,21 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "probando porquerias",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ale",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "pug": "^2.0.3",
+    "reset-css": "^4.0.1"
+  }
+}
