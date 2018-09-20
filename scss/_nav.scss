@@ -1,0 +1,28 @@
+.nav--content {
+  width: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav--menu {
+  background: red;
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    @media all and (max-width: 600px) {
+      flex-flow: column wrap;
+    }
+  }
+  @media all and (max-width: 600px) {
+    width: 100%;
+  }
+}
+.nav--logo {
+  background: red;
+}
+#menu {
+  display: none;
+}

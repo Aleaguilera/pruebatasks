@@ -1,8 +1,5 @@
 $(document).ready(function(){
-  $("#showPanel").click(function(){
-    $("#panel").fadeIn("slow");
-  });
-  $("#hidePanel").click(function(){
-    $("#panel").fadeOut("slow");
+  $(".nav--burguer").click(function(){
+    $("#menu").fadeToggle()(300);
   });
 });
