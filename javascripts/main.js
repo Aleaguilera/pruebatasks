@@ -1,5 +1,5 @@
 $(document).ready(function(){
   $(".nav--burguer").click(function(){
-    $("#menu").fadeToggle()(300);
+    $("#menu").fadeIn()(300);
   });
 });
