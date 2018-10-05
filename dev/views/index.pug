@@ -6,21 +6,11 @@ html
       meta(name="viewport", content="width=device-width, initial-scale=1")
       link(rel='stylesheet', href='css/styles.css')
     body
-      .wrapper
-        header.container
-          .nav--content 
-            .nav--logo 
-              a(href='google.com') Mi logo
-            .nav--burguer#burger
-                img(src= 'img/burguer.svg')
-            .nav--menu#menu
-              ul
-                li: a(href'#') About me
-                li: a(href'#') Works
-                li: a(href'#') Contact
-        .main
-          p lorem 
-        footer.footer Footer
+      include _nav
+      include _form
+      include _main
+      include _profile
+      include _cards
       include _footer
       script(src='https://yastatic.net/jquery/3.1.1/jquery.min.js') 
       script(src='javascripts/main.js')

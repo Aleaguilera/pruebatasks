@@ -1,0 +1,28 @@
+Además, puedes cambiar el eje principal y el sentido usando flex-direction. Es decir, puedes decidir que el main axis sea vertical, o que el sentido sea de derecha a izquierda o de abajo hacia arriba.
+Esto se consigue con la propiedad flex-direction (aplicada al flex-container).
+
+//justify-content: Distribuye los elementos en el main axis.
+  - flex-start: al inicio del main axis
+  - flex-end: al final del main axis
+  - center: al medio del main axis
+  - space around: calcula el espacio libre y lo distribuye alrededor de los flex-items
+  - space-between: calcula el espacio libre y lo distribute entre los flex-items
+
+//align-items: Alinea en el cross-axis
+
+align-items: stretch (default) | flex-start | flex-end | center | baseline
+
+Recuerda que aunque de manera predeterminada, el cross axis es vertical, podría ser también horizontal
+Es un error decir que align-items se usa para alineación vertical.
+
+Alineación de los elementos en el cross axis
+  - stretch: los flexitems rellenan todo el espacio disponible en el cross axis (si no se ha definido su dimensión)
+  - flex-start: al inicio del cross axis
+  - flex-end: al final del cross axis
+  - center: al medio del cross axis
+  - baseline: toma como referencia la linea base del texto y los elementos inline (como imágenes)
+
+  Tamaño base para los items: “flex-basis”
+  - La propiedad flex-basis, como su nombre lo indica, define el main-size base para un flex-item.
+
+  En otras palabras, si el main axis es horizontal (predeterminado), flex-basis será equivalente a width; y si el main axis es vertical, flex-basis será equivalente a height.

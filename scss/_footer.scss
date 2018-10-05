@@ -1,0 +1,19 @@
+.footer {
+  background: $black;
+  width: 80%;
+  padding: 20px 0px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  &--medias {
+    background: yellow;
+  }
+  &--contact {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+  }
+}

@@ -1,0 +1,25 @@
+@mixin background-cover() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    img {
+      width: 100%;
+    }
+}
+@mixin button-variant($background) {
+    background-color: $background;
+    padding: 20px 50px;
+    outline:none;
+    border-radius: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+@mixin container () {
+  margin: 0 auto;
+  width: 70%;
+  @media all and (max-width: 480px) {
+    width: 90%;
+  }
+}

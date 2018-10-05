@@ -7,24 +7,83 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="container">
-        <div class="nav--content"> 
-          <div class="nav--logo"> <a href="google.com">Mi logo</a></div>
-          <div class="nav--burguer" id="burger"><img src="img/burguer.svg"></div>
-          <div class="nav--menu" id="menu">
-            <ul>
-              <li><a href'#'>About me</a></li>
-              <li><a href'#'>Works</a></li>
-              <li><a href'#'>Contact</a></li>
-            </ul>
+    <nav>
+      <div id="toggle-menu"> <i class="fas fa-bars"></i></div>
+      <ul class="menu">
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="form-popup">
+      <div class="container form-wrapper">
+        <button class="close-form">x</button>
+        <form id="my-form" novalidate="novalidate">
+          <div class="form-title"> 
+            <h2>Pop-up form</h2>
           </div>
-        </div>
-      </header>
-      <div class="main">
-        <p>lorem </p>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input class="form-control" id="name" type="text" placeholder="first and last" name="name" required="">
+          </div>
+          <div class="form-group">
+            <label for="name">Email:</label>
+            <input class="form-control" id="email" type="text" placeholder="tu email pleace" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="name">Something:</label>
+            <textarea class="form-control" id="textarea" placeholder="tu email pleace" name="something"></textarea>
+          </div>
+          <div class="form-check">
+            <label for="name">Submmit:</label>
+          </div>
+        </form>
+        <button class="send-form">Send</button>
       </div>
-      <footer class="footer">Footer</footer>
+    </div>
+    <div class="main">
+      <div class="main--info">
+        <p>Hola soy alexis</p>
+        <h1>Hey there!</h1>
+        <button class="open-form">Contact<a class="scroll-down" href="google.com" address="true"></a></button>
+      </div>
+    </div>
+    <div class="profile">
+      <div class="profile--info" id="section-ok">
+        <h2>Frontend work</h2>
+        <p>I’ve been working for more than 3 years as a frontend dev at Pixel2HTML. But, what’s Pixel2HTML? Lemme tell you. Pixel2HTML is FrontEnd Development Company that helps Freelancers, Startups & Agencies to get the best HTML/CSS and JavaScript code for their site.</p>
+      </div>
+    </div>
+    <div class="proyect">
+      <div class="proyect--info">
+        <h3>Caruso Diseño</h3>
+        <p>Diseñador de identidad visual para empresas, organismos públicos y ONGs., trabajando en estrategia, diseño, innovación y experiencia de marca.</p>
+        <p>Pablo me pidió crear un sitio web para su marca, y en cual me desempeñe como maquetador y colaborador en el diseño del mismo. </p><a class="btn" href="http://www.carusodesign.com.ar" role="button" target="_blank">Ver sitio</a>
+      </div>
+      <div class="proyect--info"><img src="img/macbookpro.png"></div>
+      <div class="proyect--info"><img src="img/imac2.png"></div>
+      <div class="proyect--info">
+        <h3>Title Proyecto</h3>
+        <p>Contamos con un equipo de especialistas comprometidos con darte las mejores soluciones para impulsar tu negocio y puedas incrementar las ventas de tus productos y/o servicios. Recuerda, si no está en internet, tu negocio no existe. No esperes más, ponte en contacto con nosotros y te ayudaremos.</p><a class="btn" href="http://www.carusodesign.com.ar" role="button" target="_blank">Ver sitio</a>
+      </div>
+      <div class="proyect--info">
+        <h3>Title Proyecto</h3>
+        <p>Contamos con un equipo de especialistas comprometidos con darte las mejores soluciones para impulsar tu negocio y puedas incrementar las ventas de tus productos y/o servicios. Recuerda, si no está en internet, tu negocio no existe. No esperes más, ponte en contacto con nosotros y te ayudaremos.</p><a class="btn" href="http://www.carusodesign.com.ar" role="button" target="_blank">Ver sitio</a>
+      </div>
+      <div class="proyect--info"><img src="img/imac.png"></div>
+      <div class="proyect--info"><img src="img/imac.png"></div>
+      <div class="proyect--info">
+        <h3>Email Development</h3>
+        <p>Contamos con un equipo de especialistas comprometidos con darte las mejores soluciones para impulsar tu negocio y puedas incrementar las ventas de tus productos y/o servicios. Recuerda, si no está en internet, tu negocio no existe. No esperes más, ponte en contacto con nosotros y te ayudaremos.</p><a class="btn" href="http://www.carusodesign.com.ar" role="button" target="_blank">Ver sitio</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer--medias">
+        <h4>Social medias</h4><a class="button" href="google.com">Google</a><a href="#" target="_blank"><i class="fab fa-facebook-f" target="_blank">  </i></a>
+      </div>
+      <div class="footer--contact">
+        <h4>Datos de contacto</h4><a href="#" target="_blank">item 1</a><a href="#" target="_blank">item 2</a><a href="#" target="_blank">item 3</a><a href="#" target="_blank">item 4</a>
+      </div>
     </div>
     <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"> </script>
     <script src="javascripts/main.js"></script>

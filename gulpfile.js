@@ -8,7 +8,7 @@ const gulp = require ('gulp'),
 gulp.task ('sass', ()=>
   gulp.src('./scss/*.scss')
     .pipe(sass({
-      outputStyle: 'expanded'
+      outputStyle: ['expanded']
     }))
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({

@@ -1,35 +1,8 @@
-.container {
-  border: 1px solid red;
+// button {
+//   @include button-variant ($color-white, $color-celeste);
+// }
 
-}
-.wrapper {
-  display: flex;
-  flex-flow: row wrap;
-}
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.header {
-  background: tomato;
-}
-
-.footer {
-  background: lightgreen;
-}
-
-.main {
-  background: deepskyblue;
-}
-
-.aside-1 {
-  background: gold;
-}
-
-.aside-2 {
-  background: hotpink;
+.btn:hover {
+  opacity: .8;
+  cursor: pointer;
 }

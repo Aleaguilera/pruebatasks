@@ -1,28 +1,31 @@
-.nav--content {
-  width: 60%;
-  border: 1px solid red;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.nav--menu {
-  background: red;
-  ul {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    @media all and (max-width: 600px) {
-      flex-flow: column wrap;
+.menu {
+  background: pink;
+  transition: all 0.3;
+  @media screen and (min-width: 768px) {
+     display: flex;
+     justify-content: flex-end;
+  }
+  li {
+    border-right: 1px solid white;
+    text-align: center
+  }
+  a {
+    display: block;
+    line-height: 3em;
+    color: grey;
+    &:hover {
+      background: rgba(#000, 0.2);
     }
   }
-  @media all and (max-width: 600px) {
-    width: 100%;
+}
+
+#toggle-menu {
+  background: grey;
+  line-height: 2em;
+  color: pink;
+  display: flex;
+  content: '';
+  @media screen and (min-width: 768px) {
+    display: none;
   }
-}
-.nav--logo {
-  background: red;
-}
-#menu {
-  display: none;
 }

@@ -1,0 +1,18 @@
+.form-popup
+  .container.form-wrapper
+    button.close-form x
+    form#my-form(novalidate='novalidate')
+      .form-title 
+        h2 Pop-up form
+      .form-group
+        label(for='name') Name:
+        input#name.form-control(type='text', placeholder='first and last' name='name' required='')
+      .form-group
+        label(for='name') Email:
+        input#email.form-control(type='text', placeholder='tu email pleace' name='email' required='')
+      .form-group
+        label(for='name') Something:
+        textarea#textarea.form-control(placeholder='tu email pleace' name='something')
+      .form-check
+        label(for='name') Submmit:
+    button.send-form Send

@@ -1,0 +1,31 @@
+.proyect {
+  padding: 30px 0px;
+  display: flex;
+  width: 100%;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    width: 80%;
+  }
+  &--info {
+    flex-basis: 35%;
+    flex-grow: 1;
+    padding: 70px;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    color: $black;
+  }
+  p {
+    color: $grey;
+  }
+  a {
+    display: inline-block;
+    @include button-variant ($red);
+    padding: 13px 28px;
+  }
+}
